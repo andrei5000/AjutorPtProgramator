@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <title>Ajutor pentru Programator</title>
+  <link rel="icon" href="lsac-icon.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="apple-lsac-icon.ico">
+  <!-- <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="mypersonalstyle.css">
+</head>
+<body style="font-family: 'Merriweather';font-style: normal;">
+
+  <div id="myOverlay" class="overlay">
+    <div class="overlay-content">
+      <div class="container-fluid">
+          <div class="row" style="background: #92E3A9;">
+            <div class="col-sm-12" style="background: #92E3A9;">
+              <div class="overlay-header">
+                <p style="margin-top: 20px; float: left; margin-bottom: 20px;">Exprimă-ți frustrările</p>
+                  <!-- <div class="closebtn" onclick="closeOverlay()" style="cursor: pointer;">
+                    <p>x</p>
+                  </div> -->
+                  <button type="button" class="close" aria-label="Close" onclick="closeOverlay()" style="margin-top: 20px; margin-right: 15px;">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            </div>
+          </div>
+<div class="row">
+            <div class="col-sm-12" style="background: #FFFFFF">
+              <div class="overlay-form">
+                <form action="/action_page.php" class="bootstrap_form">
+                  <div class="form-group">
+                    <select class="form-control form_input" id="materie" name="materie" placeholder="Alege materia">
+                      <option default>Alege materia</option>
+                    </select>
+                  </div>
+                  <div class="form-group" style="padding-top: 2%;">
+                    <input type="proiect" class="form-control form_input" id="proiect" name="proiect" placeholder="Titlul proiectului">
+                  </div>
+                </form>
+                <button type="button" class="btn button2 send-overlay">Încarcă</button>
+              </div>
+            </div>
+          </div>
+<div class="row">
+            <div class="col-sm-12" style="background: #92E3A9;">
+              <div class="overlay-header">
+                <p style="margin-top: 20px;">Plângeri introduse până acum.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 overlay-end"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function openOverlay() {
+  document.getElementById("myOverlay").style.width = "100%";
+}
+
+function closeOverlay() {
+  document.getElementById("myOverlay").style.width = "0%";
+  }
+</script>
+
+<div class="container-fluid">
+
+<div class="row">
+ <div class="col-sm-12" style="display:flex" >
+
+    <img class="media-left" src = "ajutor.png" alt="Ajutor pentru programator"
+    style="margin-top: 5%;  margin-left: 5%;  margin-bottom: 5%; display: inline-block;">
+
+    <div class="login_info">
+     <img class="login_menu" src="menu_icon.png" alt="menu icon">
+     <button type="button" class="login_button disappear">Logare</button>
+     <button type="button" class="near_login_button disappear" style="margin-left:3px">Creare cont</button>
+     <button type="button" class="eastereggbutton disappear"> <a href="https://lsacbucuresti.ro/" target="_blank" style="color:black;"> Contact </a> </button>
+
+
+   </div>
+
+ </div>
+</div>
+
+
+
+<div class="row">
+
+  <div class="col-sm-6 dotted_pink">
+    <div class="container-fluid" style="margin-left: 3%;">
+      <div class="row">
+        <div class="col-sm-12 main_left">
+          <h1 class="ad">Cumpăratul de teme nu a fost niciodată mai simplu!</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="addesc">Platforma ideală pentru studenții de la Politehnică cu portofele pline, care au nevoie urgent de un înger care să le repare nota de intrare în examen.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 mobilestack" id="img_container">
+            <button type="button" onclick="openOverlay()" class="green_black_button">Vreau să cumpăr</button>
+            <button type="button" onclick="openOverlay()" class="black_green_button rightbutton">Vreau să fac teme pentru alții</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 lightblue" style="height: 100%;">
+      <img src="studyingLSAC.png"  alt="girl studying" usemap="#LSACmap"
+      style="vertical-align: middle; margin-left: auto; margin-right: auto; width: 100%;height: auto;">
+  </div>
+</div>
+
+<map name="LSACmap">
+  <area shape="rect" coords="95vw,515vh,135vw,545vh" alt="Computer" href="https://lsacbucuresti.ro/">
+</map>
+
+
+<div class="row" style="background-color:#92E3A9;">
+
+  <div class="row">
+  <div class="col-sm-12" style="max-width: 100%; margin-top: 5.28vh; margin-bottom: 6%; text-align: center;
+  font-family: 'Merriweather';  font-style: normal; font-weight: 700; font-size: 29px; line-height: 1.2;">
+  Cum funcționează?
+  </div>
+  </div>
+
+  <div class="col-sm-4" style="margin-left:auto; margin-right:auto;">
+    <table class="center">
+      <tr>
+        <td style="padding-bottom:20%">
+          <p class="big_nr"> 1 </p>
+        </td>
+        <td class="text"> Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="col-sm-4" style="margin-left:auto; margin-right:auto;">
+    <table class="center">
+      <tr>
+        <td style="padding-bottom:20%">
+          <p class="big_nr"> 2 </p>
+        </td>
+        <td class="text"> Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="col-sm-4" style="margin-left:auto; margin-right:auto;">
+    <table class="center">
+      <tr>
+        <td style="padding-bottom:33%">
+          <p class="big_nr"> 3 </p>
+        </td>
+        <td class="text"> După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în avans, restul după ce vă vedeți intrat în examen.
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="row form">
+  <div class="col-sm-6" >
+    <p class="question"> Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă? </p>
+    <p class="descr_form"> Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap. </p>
+  </div>
+
+
+  <div class="col-sm-6">
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nume</label>
+    <input type="name" class="form-control" aria-describedby="emailHelp" placeholder="Popescu Ionescu">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Email</label>
+    <input type="email" class="form-control" placeholder="PopescuIonescu@gmail.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Înjurătura</label>
+    <input type="text" class="form-control" placeholder="Scrie aici!"  style="height:82px">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+   </form>
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="row footer">
+  <table class="center">
+    <tr>
+      <td style="border-color:#263238">
+        <img src="instagram.png" alt="instagram logo">
+      </td>
+
+      <td style="padding-left: 12px; padding-right: 12px;border-color:#263238">
+        <img src="twitter.png" alt="twitter logo">
+      </td>
+
+      <td style="border-color:#263238">
+        <img src="facebook.png" alt="facebook logo">
+      </td>
+    </tr>
+  </table>
+
+  <div>
+    <div class="col-sm-12">
+      <p class="center" style="font-family: 'Merriweather'; color: #FFFFFF; font-style: normal; font-weight: 300;
+      font-size: 15px; line-height: 18px; text-align: center;margin-bottom: 2%;">
+        Copyright 2020 | Cine ne pârăște o mierlește.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
